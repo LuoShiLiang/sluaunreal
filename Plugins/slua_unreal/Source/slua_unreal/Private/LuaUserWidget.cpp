@@ -25,6 +25,11 @@ void ULuaUserWidget::NativeConstruct()
 #endif
 }
 
+void ULuaUserWidget::NativeDestruct()
+{
+	luaSelfTable.free();
+}
+
 void ULuaUserWidget::NativeTick(const FGeometry & MyGeometry, float InDeltaTime)
 {
 	// store current tick parameter MyGeometry

@@ -26,6 +26,7 @@ class SLUA_UNREAL_API ULuaUserWidget : public UUserWidget, public slua_Luabase {
 
 protected:
 	virtual void NativeConstruct();
+	virtual void NativeDestruct();
 	virtual void NativeTick(const FGeometry& MyGeometry, float InDeltaTime);
 public:	
 	// below UPROPERTY and UFUNCTION can't be put to macro LUABASE_BODY

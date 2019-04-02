@@ -19,6 +19,11 @@ function panel:Construct()
     }
 end
 
+function panel:Destruct()
+    print"panel:Destruct"
+    self.imgs = nil
+end
+
 function panel:Tick()
     print("panel:tick")
     -- call parent super
